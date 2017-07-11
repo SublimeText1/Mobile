@@ -49,9 +49,7 @@ ul{
 	height: 40px;
 	align-items: center;
 	align-content: space-around;
-	/*padding: 10px auto;*/
-	/*max-width: 640px;
-	min-width: 320px;*/
+
 }
 .jfr_header_box_label>li{
 	float: left;
