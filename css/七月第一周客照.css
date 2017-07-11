@@ -21,10 +21,11 @@ ul{
 }
 .jfr_container{
 	width: 100%;
-	/*max-width: 640px;
-	min-width: 320px;*/
+	max-width: 640px;
+	min-width: 320px;
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
 	/*border:1px solid red;*/
 }
 .jfr_container>.jfr_header{	
@@ -97,4 +98,20 @@ ul{
 }
 .jfr_aside_bottom_photo{
 	width: 100%;
+}
+.showCase img {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+img {
+    border: 0px;
+    outline-width: 0px;
+    vertical-align: top;
+}
+.footer{
+	text-align: center;
+	background: #1e1e1e;
+	height: 110px;
+	color: #d8d8d8;
+	line-height: 110px;
 }
