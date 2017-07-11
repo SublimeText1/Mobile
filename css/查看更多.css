@@ -30,16 +30,13 @@ ul{
 }
 .jfr_container>.jfr_header{	
 	width: 100%;
-/*	max-width: 640px;
-	min-width: 320px;*/
-	/*border:1px solid red;*/
 }
 .jfr_header_box_header_photo{
 	display: flex;
 	width: 100%;
 }
 .jfr_header_box_header_photo>img{
-	/*display: flex;*/
+	
 	width: 100%;
 }
 
