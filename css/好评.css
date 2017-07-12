@@ -6,12 +6,12 @@
 	-webkit-box-sizing:border-box;
 }
 body{
-	font-size:14px;
+	font-size:15px;
 	font-family: "微软雅黑"
 	color:#333;
 }
 a{
-	color:#333;
+	color:rgb(153,153,153);
 	text-decoration: none;
 }
 a:hover{
@@ -24,4 +24,128 @@ input{
 }
 ul,ol{
 	list-style:none;
+}
+.jfr_container{
+	width: 100%;
+	 
+	margin: 0 auto;
+	display: flex;
+	/*border:1px solid red;*/
+	display: block;
+}
+.jfr_container>.jfr_header{	
+	width: 100%;
+/*	max-width: 640px;
+	min-width: 320px;*/
+	/*border:1px solid red;*/
+}
+.jfr_header_box_header_photo{
+	display: flex;
+	width: 100%;
+}
+.jfr_header_box_header_photo>img{
+	/*display: flex;*/
+	width: 100%;
+}
+
+.jfr_header_box_label{
+	display: flex;
+	width: 100%;
+	font-size: 15px;
+	/*padding-left: 20px;*/ 
+	background-color: rgb(38,38,38);
+	height: 40px;
+	align-items: center;
+	align-content: space-around;
+	/*padding: 10px auto;*/
+	/*max-width: 640px;
+	min-width: 320px;*/
+}
+.jfr_header_box_label>li{
+	float: left;
+	/*margin-left: 12px;*/
+/*	color: rgb(153,153,153);*/
+	width: 100%;
+	height: 20px;
+	/*border: 1px solid red;*/
+	text-align: center;
+	/*margin-left: 10px;
+	margin-right: 10px;*/
+}
+.jfr_header>.jfr_header_box_label>.jfr_header_box_label_bar{
+	width: 10px;
+	color:rgb(78,78,78);
+}
+.produced{
+	background-color: rgb(30,30,30);
+	margin-bottom:52px;
+
+}
+.custnomers{
+	color:white;
+	text-align: center;
+	height:60px;
+}
+.custnomers>.praised_customers{
+	font-size:25px;
+}
+.custnomers>.size{
+	color:rgb(96,86,65);
+	padding-top: 5px;
+}
+.custnomers>.bar{
+	border-bottom:1px solid rgb(96,86,65);
+	width:30px;
+/*	align-items:center;*/
+	position: absolute;
+	left:145px;
+	margin-top:8px;
+}
+.synopsis{
+	margin:35px;
+	width:90%;
+	color:rgb(175,178,176);
+	margin:auto;
+
+}
+.synopsis>p{
+	font-size:0.65em;
+}
+.ticking_time{
+	font-size:0.5em;
+	color:rgb(96,86,65);
+}
+.jfr_aside{
+	display: flex;
+	/*width: 100%;*/
+	/*max-width: 640px;
+	min-width: 320px;*/
+}
+.jfr_aside_right{
+	
+	
+	position: fixed;
+	top: 40%;
+	right: 0px;
+	/*background-image: url(images/jfr_aside_right.png);*/
+}
+.jfr_aside_bottom{
+	/*background-image: url(images/jfr_aside_bottom.png);*/
+	display: flex;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	/*right: 0px;*/
+	/*border:1px solid red;*/
+}
+.jfr_aside_bottom_photo{
+	width: 100%;
+}
+.tail{
+	height:60px;
+	color:white;
+	text-align: center;
+	margin-top:18px;
+	font-size:10px;
 }
