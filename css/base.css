@@ -21,25 +21,18 @@ ul{
 	list-style: none;
 }
 .jfr_container{
-	/*width: 100%;*/
 	max-width: 640px;
 	min-width: 320px;
 	margin: 0 auto;
-/*	display: flex;*/
-	/*border:1px solid red;*/
 }
 .jfr_container>.jfr_header{	
 	width: 100%;
-/*	max-width: 640px;
-	min-width: 320px;*/
-	/*border:1px solid red;*/
 }
 .jfr_header_box_header_photo{
 	display: flex;
 	width: 100%;
 }
 .jfr_header_box_header_photo>img{
-	/*display: flex;*/
 	width: 100%;
 }
 
@@ -48,32 +41,23 @@ ul{
 	width: 100%;
 	font-size: 0.9em;
 	margin: 0px;
-	/*padding-left: 20px;*/ 
 	background-color: rgb(38,38,38);
 	height: 40px;
 	align-items: center;
 	align-content: space-around;
-	/*padding: 10px auto;*/
-	/*max-width: 640px;
-	min-width: 320px;*/
 }
 .jfr_header_box_label>li{
 	float: left;
-	/*margin-left: 12px;*/
 	color: rgb(153,153,153);
 	width: 100%;
 	height: 20px;
-	/*border: 1px solid red;*/
 	text-align: center;
-	/*margin-left: 10px;
-	margin-right: 10px;*/
 }
 .jfr_header>.jfr_header_box_label>.jfr_header_box_label_bar{
 	width: 10px;
 	color: #4e4e4e;
 }
 .jfr_title{
-	/*border:1px solid red;*/
 	margin-top: 10px;
 	width: 100%;
 	height: 60px;
@@ -90,25 +74,16 @@ ul{
 .jfr_title_under{
 	
 	color: #605641;
-	
-
 }
-
-
-
-
 .jfr_nav{
 	display: flex;
-	flex-direction: column;
-	/*border-bottom: 1px solid #e0e0e0;*/
-
+	flex-direction: column;	
 }
 .jfr_nav>.jfr_nav_first,.jfr_nav>.jfr_nav_second,.jfr_nav>.jfr_nav_three{
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
-	padding: 2px 5px;
-	
+	padding: 2px 5px;	
 }
 .jfr_nav>.jfr_nav_first>div,.jfr_nav>.jfr_nav_three>div,.jfr_nav>.jfr_nav_second>div{
 	width: 33%;
@@ -125,43 +100,27 @@ ul{
 	font-size: 0.7em;
 }
 .jfr_cop{
-	/*border:1px solid red;*/
 	margin-top: 10px;
 	width: 100%;
-	/*height: 60px;*/
 	text-align: center;
 	color: white;
 	font-size: 0.7em;
 }
-
-
-
-
-
 .jfr_aside{
 	display: flex;
-	/*width: 100%;*/
-	/*max-width: 640px;
-	min-width: 320px;*/
 }
-.jfr_aside_right{
-	
-	
+.jfr_aside_right{	
 	position: fixed;
 	top: 40%;
 	right: 0px;
 	z-index: 100;
-	/*background-image: url(images/jfr_aside_right.png);*/
 }
 .jfr_aside_bottom{
-	/*background-image: url(images/jfr_aside_bottom.png);*/
 	display: flex;
 	width: 100%;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
-	/*right: 0px;*/
-	/*border:1px solid red;*/
 }
 .jfr_aside_bottom_photo{
 	width: 100%;
