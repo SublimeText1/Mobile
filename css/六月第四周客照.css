@@ -8,7 +8,6 @@
 body{	
 	font-family: "微软雅黑";
 	color: #333;
-	background-color: rgb(30,30,30);
 }
 a{
 	color: rgb(153,153,153);
@@ -21,11 +20,12 @@ ul{
 	list-style: none;
 }
 .jfr_container{
-	/*width: 100%;*/
+	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
 	margin: 0 auto;
-/*	display: flex;*/
+	display: flex;
+	flex-direction: column;
 	/*border:1px solid red;*/
 }
 .jfr_container>.jfr_header{	
@@ -46,8 +46,7 @@ ul{
 .jfr_header_box_label{
 	display: flex;
 	width: 100%;
-	font-size: 0.9em;
-	margin: 0px;
+	font-size: 15px;
 	/*padding-left: 20px;*/ 
 	background-color: rgb(38,38,38);
 	height: 40px;
@@ -72,72 +71,6 @@ ul{
 	width: 10px;
 	color: #4e4e4e;
 }
-.jfr_title{
-	/*border:1px solid red;*/
-	margin-top: 10px;
-	width: 100%;
-	height: 60px;
-	text-align: center;
-}
-.jfr_title_bottom{
-	color: #605641;
-	font-size: 0.7692em;
-}
-.jfr_title_top{
-	font-size: 1.1em;
-	color: white;
-}
-.jfr_title_under{
-	
-	color: #605641;
-	
-
-}
-
-
-
-
-.jfr_nav{
-	display: flex;
-	flex-direction: column;
-	/*border-bottom: 1px solid #e0e0e0;*/
-
-}
-.jfr_nav>.jfr_nav_first,.jfr_nav>.jfr_nav_second,.jfr_nav>.jfr_nav_three{
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
-	padding: 2px 5px;
-	
-}
-.jfr_nav>.jfr_nav_first>div,.jfr_nav>.jfr_nav_three>div,.jfr_nav>.jfr_nav_second>div{
-	width: 33%;
-	height: 80px;
-	margin: 0px 5px;
-}
-.jfr_nav>.jfr_nav_first>div>a>img,.jfr_nav>.jfr_nav_three>div>a>img,.jfr_nav>.jfr_nav_second>div>a>img{
-	width: 100%;
-	display: block;
-}
-.jfr_nav>.jfr_nav_first>div>a>p,.jfr_nav>.jfr_nav_second>div>a>p,.jfr_nav>.jfr_nav_three>div>a>p{
-	
-	color: rgb(175,178,176);
-	font-size: 0.7em;
-}
-.jfr_cop{
-	/*border:1px solid red;*/
-	margin-top: 10px;
-	width: 100%;
-	/*height: 60px;*/
-	text-align: center;
-	color: white;
-	font-size: 0.7em;
-}
-
-
-
-
-
 .jfr_aside{
 	display: flex;
 	/*width: 100%;*/
@@ -165,4 +98,20 @@ ul{
 }
 .jfr_aside_bottom_photo{
 	width: 100%;
+}
+.showCase img {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+img {
+    border: 0px;
+    outline-width: 0px;
+    vertical-align: top;
+}
+.footer{
+	text-align: center;
+	background: #1e1e1e;
+	height: 110px;
+	color: #d8d8d8;
+	line-height: 110px;
 }

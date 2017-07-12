@@ -8,7 +8,6 @@
 body{	
 	font-family: "微软雅黑";
 	color: #333;
-	background-color: rgb(30,30,30);
 }
 a{
 	color: rgb(153,153,153);
@@ -21,41 +20,36 @@ ul{
 	list-style: none;
 }
 .jfr_container{
-	/*width: 100%;*/
+	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
 	margin: 0 auto;
-/*	display: flex;*/
-	/*border:1px solid red;*/
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(30,30,30);
 }
 .jfr_container>.jfr_header{	
 	width: 100%;
-/*	max-width: 640px;
-	min-width: 320px;*/
-	/*border:1px solid red;*/
 }
 .jfr_header_box_header_photo{
 	display: flex;
 	width: 100%;
 }
 .jfr_header_box_header_photo>img{
-	/*display: flex;*/
+	
 	width: 100%;
 }
 
 .jfr_header_box_label{
 	display: flex;
 	width: 100%;
-	font-size: 0.9em;
-	margin: 0px;
+	font-size: 15px;
 	/*padding-left: 20px;*/ 
 	background-color: rgb(38,38,38);
 	height: 40px;
 	align-items: center;
 	align-content: space-around;
-	/*padding: 10px auto;*/
-	/*max-width: 640px;
-	min-width: 320px;*/
+
 }
 .jfr_header_box_label>li{
 	float: left;
@@ -72,72 +66,6 @@ ul{
 	width: 10px;
 	color: #4e4e4e;
 }
-.jfr_title{
-	/*border:1px solid red;*/
-	margin-top: 10px;
-	width: 100%;
-	height: 60px;
-	text-align: center;
-}
-.jfr_title_bottom{
-	color: #605641;
-	font-size: 0.7692em;
-}
-.jfr_title_top{
-	font-size: 1.1em;
-	color: white;
-}
-.jfr_title_under{
-	
-	color: #605641;
-	
-
-}
-
-
-
-
-.jfr_nav{
-	display: flex;
-	flex-direction: column;
-	/*border-bottom: 1px solid #e0e0e0;*/
-
-}
-.jfr_nav>.jfr_nav_first,.jfr_nav>.jfr_nav_second,.jfr_nav>.jfr_nav_three{
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
-	padding: 2px 5px;
-	
-}
-.jfr_nav>.jfr_nav_first>div,.jfr_nav>.jfr_nav_three>div,.jfr_nav>.jfr_nav_second>div{
-	width: 33%;
-	height: 80px;
-	margin: 0px 5px;
-}
-.jfr_nav>.jfr_nav_first>div>a>img,.jfr_nav>.jfr_nav_three>div>a>img,.jfr_nav>.jfr_nav_second>div>a>img{
-	width: 100%;
-	display: block;
-}
-.jfr_nav>.jfr_nav_first>div>a>p,.jfr_nav>.jfr_nav_second>div>a>p,.jfr_nav>.jfr_nav_three>div>a>p{
-	
-	color: rgb(175,178,176);
-	font-size: 0.7em;
-}
-.jfr_cop{
-	/*border:1px solid red;*/
-	margin-top: 10px;
-	width: 100%;
-	/*height: 60px;*/
-	text-align: center;
-	color: white;
-	font-size: 0.7em;
-}
-
-
-
-
-
 .jfr_aside{
 	display: flex;
 	/*width: 100%;*/
@@ -145,8 +73,6 @@ ul{
 	min-width: 320px;*/
 }
 .jfr_aside_right{
-	
-	
 	position: fixed;
 	top: 40%;
 	right: 0px;
@@ -165,4 +91,72 @@ ul{
 }
 .jfr_aside_bottom_photo{
 	width: 100%;
+}
+.photo{
+	width: 100%;
+	height: auto;
+	padding-bottom: 1.538em;
+}
+.title{
+	text-align: center;
+	margin-top: 15px;
+}
+.title_world{
+	color: white;
+	font-size: 1.1em;
+}
+.title_world1{
+	color: #605641;
+	font-size: 0.7692em;
+	text-align: center;
+	padding-bottom: 0.9em;
+	background: url(../images/全球旅拍底部横线.png) center bottom no-repeat;
+	background-size: 5%;
+}
+.photo .globalDiv {
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+}
+.photo .globalDiv ul {
+    width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.photo .globalDiv ul li {
+    width: 31%;
+	float:left;
+	height: auto;
+	margin: 0 1.1667% 1em;
+}
+.photo .globalDiv ul li a {
+    display: block;
+}
+.photo .globalDiv ul li a img {
+    display: block;
+    width: 100%;
+    height: 5em;
+}
+img {
+    border: 0px;
+    outline-width: 0px;
+    vertical-align: top;
+}
+
+.photo .globalDiv ul li a h2 {
+    width: 100%;
+    margin-top: 0.6em;
+    height: 1.4em;
+    line-height: 1.4em;
+    overflow: hidden;
+    font-size: 0.5em;
+    color: #666;
+}
+.photo .globalDiv ul li a p {
+    width: 100%;
+    height: 1.4em;
+    line-height: 1.4em;
+    overflow: hidden;
+    font-size: 0.7401em;
+    color: #afb2b0;
 }
