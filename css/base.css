@@ -8,7 +8,7 @@
 body{	
 	font-family: "微软雅黑";
 	color: #333;
-	background-color: rgb(30,30,30);
+	/*background-color: rgb(30,30,30);*/
 }
 a{
 	color: rgb(153,153,153);
@@ -21,9 +21,15 @@ ul{
 	list-style: none;
 }
 .jfr_container{
+	vertical-align: baseline;
+	height: auto;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding-bottom: 3.5em;
+	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
-	margin: 0 auto;
+	
 }
 .jfr_container>.jfr_header{	
 	width: 100%;
@@ -55,7 +61,6 @@ ul{
 }
 .jfr_header>.jfr_header_box_label>.jfr_header_box_label_bar{
 	width: 10px;
-	color: #4e4e4e;
 }
 .jfr_title{
 	margin-top: 10px;
@@ -71,13 +76,12 @@ ul{
 	font-size: 1.1em;
 	color: white;
 }
-.jfr_title_under{
-	
+.jfr_title_under{	
 	color: #605641;
 }
 .jfr_nav{
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 }
 .jfr_nav>.jfr_nav_first,.jfr_nav>.jfr_nav_second,.jfr_nav>.jfr_nav_three{
 	display: flex;
@@ -107,13 +111,13 @@ ul{
 	font-size: 0.7em;
 }
 .jfr_aside{
+	width: 100%;
 	display: flex;
 }
-.jfr_aside_right{	
+.jfr_aside_right{
 	position: fixed;
 	top: 40%;
 	right: 0px;
-	z-index: 100;
 }
 .jfr_aside_bottom{
 	display: flex;
