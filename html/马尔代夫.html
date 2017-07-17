@@ -4,11 +4,12 @@
 	<title>金夫人婚纱摄影</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
 	<link rel="stylesheet" href="../css/details.css">
 </head>
 <body>
 	<div class="jfr_container">
-		<header class="jfr_header">
+		<header class="jfr_header" id="big_div" >
 			<div class="jfr_header_box_header_photo">
 				<img src="../images/header_photo.png" alt="">
 			</div>
@@ -35,11 +36,116 @@
 		<div class="jfr_cop">
 			<p>北京时尚经典婚纱摄影有限公司</p>
 		</div>
+		<div class="big_div" id="small_div" >
+			<div class="one_line">
+				<img src="../images/down.jpg" alt=""onclick="input1()" id="down"></div>
+			<div class="div_photo">
+				<img src="../images/ser.jpg" alt="" class="ser"></div>
+			<div class="three_time">
+				<span id="month"></span>
+				<span>月</span>
+				<span id="date"></span>
+				<span>日</span>
+				<span id="h"></span>
+				<span>:</span>
+				<span id="m"></span>
+			</div>
+			<div class="four_line">
+				<img src="../images/头像.jpg" alt="">
+					<span>时尚经典全球旅拍—牛阿状</span>
+					<p class="kefu_liaotian">您好我是您的专属客服牛阿状，很高兴为您服务</p>
+				<img src="../images/hua.gif" alt="">
+			</div>
+		<div class="fire_line">
+			<div id="emoticon">
+				<div id="emoticon_list">
+					<img src="../images/xiao.png" alt="" id="click_pho">
+					<input type="file" id="photo_link">
+					<label for="photo_link"><img src="../images/tupian.png" alt=""></label><input type="text" placeholder="请输入" class="text_input"><input type="button" value="发送" class="but_input">
+				</div>
+				<div class="liu_line">客服软件由中企微云提供</div>
+				<table id="exp_big">
+					<tr>
+						<td><img src="../images/exp_1.gif" alt=""></td>
+						<td><img src="../images/exp_2.gif" alt=""></td>
+						<td><img src="../images/exp_3.gif" alt=""></td>
+						<td><img src="../images/exp_4.gif" alt=""></td>
+						<td><img src="../images/exp_5.gif" alt=""></td>
+						<td><img src="../images/exp_6.gif" alt=""></td>
+					</tr>
+					<tr>
+						<td><img src="../images/exp_7.gif" alt=""></td>
+						<td><img src="../images/exp_8.gif" alt=""></td>
+						<td><img src="../images/exp_9.gif" alt=""></td>
+						<td><img src="../images/exp_10.gif" alt=""></td>
+						<td><img src="../images/exp_11.gif" alt=""></td>
+						<td><img src="../images/exp_12.gif" alt=""></td>
+					</tr>
+					<tr>
+						<td><img src="../images/exp_13.gif" alt=""></td>
+						<td><img src="../images/exp_14.gif" alt=""></td>
+						<td><img src="../images/exp_15.gif" alt=""></td>
+						<td><img src="../images/exp_16.gif" alt=""></td>
+						<td><img src="../images/exp_17.gif" alt=""></td>
+						<td><img src="../images/exp_18.gif" alt=""></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 		<aside class="jfr_aside">
-			<div class="jfr_aside_right"><img src="../images/jfr_aside_right.png" alt=""></div>
-			<div class="jfr_aside_bottom"><img src="../images/jfr_aside_bottom.png" alt="" class="jfr_aside_bottom_photo"></div>
+			<div class="jfr_aside_right"><a href="http://www2.53kf.com/m.php?cid=72074585&style=1&keyword=http%3A%2F%2Fwww.vc520.com%2Findex.php%3Fc%3Dpage%26id%3D7&referer=http%3A%2F%2Fm.vc520.com%2F&guest_id=10109432922016&tpl=crystal_blue&uid=e72b83e13e91ccb786e0ae4d73dcf34e&u_stat_id=&talktitle=&tfrom=50&zdkf_type=1&kf=857227431%40qq.com%2C1556641134%40qq.com%2C2336887128%40qq.com%2C790898663%40qq.com%2C1010137950%40qq.com%2C2327437950%40qq.com%2C285740246%40qq.com"><img src="../images/jfr_aside_right.png" alt=""></a></div>
+			<div class="jfr_aside_bottom"><img src="../images/jfr_aside_bottom.png" alt="" class="jfr_aside_bottom_photo" onclick="input2()"></div>
 		</aside>
 
 	</div>
+	<script type="text/javascript">
+		var small_table = document.getElementById("small_div");
+		var big_div = document.getElementById("big_div");
+		var body = document.getElementById("body");
+		function input2(){
+			if (big_div.style.display == "none") {
+				small_table.style.opacity = "1";
+
+			}else{
+				small_table.style.display = "block";
+		
+			}
+		}
+		function input1(){
+			small_table.style.display = "none";
+		
+			big_div.style.opacity = "1";
+		}
+
+
+
+
+		$("#emoticon").css("margin-top","10px");
+		var biaoqing = document.getElementById("exp_big");
+		var isShow = false;
+		$("#click_pho").click(function(){
+			if (isShow) {
+				$("#emoticon").animate({"margin-top":"10px"},200);
+				biaoqing.style.opacity = "0";
+				biaoqing.style.display = "none";
+				isShow = false;
+			}else{
+				$("#emoticon").animate({"margin-top":"-130px"},400);
+				biaoqing.style.opacity = "1";
+				biaoqing.style.display = "block";
+				isShow = true;
+			}
+		})
+		var tmpDate = new Date();
+		var date = tmpDate.getDate();
+		var  month= tmpDate.getMonth() + 1 ;
+		var h =tmpDate.getHours();
+		var m = tmpDate.getMinutes();
+		document.getElementById("month").textContent = month ;
+		document.getElementById("date").textContent =date;
+		document.getElementById("h").textContent = h;
+		document.getElementById("m").textContent = m;
+	</script>
 </body>
 </html>
