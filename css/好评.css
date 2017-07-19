@@ -116,10 +116,10 @@ ul,ol{
 	width: 100%;
 }
 .tail{
-	height:60px;
+	height:160px;
+	margin-top: 50px;
 	color:white;
 	text-align: center;
-	margin-top:0px;
 	font-size:10px;
 	/*margin-bottom: 1px;*/
 	background-color: rgb(30,30,30);

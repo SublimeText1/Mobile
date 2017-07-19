@@ -102,11 +102,11 @@ ul{
 	font-size: 0.7em;
 }
 .jfr_cop{
-	margin-top: 10px;
-	width: 100%;
 	text-align: center;
-	color: white;
-	font-size: 0.7em;
+	background: #1e1e1e;
+	height: 60px;
+	color: #d8d8d8;
+	margin-top: 50px;
 }
 .jfr_aside{
 	width: 100%;
