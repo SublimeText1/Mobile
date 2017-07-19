@@ -160,3 +160,9 @@ img {
     font-size: 0.7401em;
     color: #afb2b0;
 }
+.footer{
+	text-align: center;
+	background: #1e1e1e;
+	height: 60px;
+	color: #d8d8d8;
+}
